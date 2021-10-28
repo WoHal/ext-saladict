@@ -1,22 +1,21 @@
 import React, { FC } from 'react'
 import { CambridgeResult } from './engine'
 import { ViewPorps } from '@/components/dictionaries/helpers'
-import { StrElm } from '@/components/StrElm'
 
-export const DictCambridge: FC<ViewPorps<CambridgeResult>> = props => (
-  <>
-    {props.result.map(entry => (
-      <section
-        key={entry.id}
-        id={entry.id}
-        className="dictCambridge-Entry"
-        onClick={handleEntryClick}
-      >
-        <StrElm html={entry.html} />
-      </section>
-    ))}
-  </>
-)
+export const DictCambridge: FC<ViewPorps<CambridgeResult>> = props => {
+  const { result } = props
+  const entry = result[0] || {}
+  return (
+    <section
+      key={entry.id}
+      id={entry.id}
+      className="dictCambridtry"
+      onClick={handleEntryClick}
+    >
+      <iframe src={entry.url} width="100%" height="100%" />
+    </section>
+  )
+}
 
 export default DictCambridge
 

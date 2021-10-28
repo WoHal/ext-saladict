@@ -63,7 +63,7 @@ export const searchStart: ActionHandler<
             .filter(id => {
               // dicts that should be rendered
               const dict = activeProfile.dicts.all[id]
-              if (checkSupportedLangs(dict.selectionLang, word.text)) {
+              if (dict && checkSupportedLangs(dict.selectionLang, word.text)) {
                 const wordCount = countWords(word.text)
                 const { min, max } = dict.selectionWC
                 return wordCount >= min && wordCount <= max
