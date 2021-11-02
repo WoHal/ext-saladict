@@ -102,33 +102,33 @@ export function sentence(): ProfileStorage {
 
   const profile = getDefaultProfile(idItem.id) as ProfileMutable
   profile.dicts.selected = [
-    // 'jukuu',
-    // 'bing',
-    // 'cnki',
-    // 'renren',
-    // 'eudic',
-    // 'cobuild',
+    'jukuu',
+    'bing',
+    'cnki',
+    'renren',
+    'eudic',
+    'cobuild',
     'cambridge',
-    // 'longman',
-    // 'macmillan'
+    'longman',
+    'macmillan'
   ]
 
-  // const allDict = profile.dicts.all
-  // allDict.bing.options.tense = false
-  // allDict.bing.options.phsym = false
-  // allDict.bing.options.cdef = false
-  // allDict.bing.options.related = false
-  // allDict.bing.options.sentence = 9999
-  // allDict.cnki.options.dict = false
-  // allDict.eudic.options.resultnum = 9999
-  // allDict.macmillan.options.related = false
-  // allDict.longman.options.wordfams = false
-  // allDict.longman.options.collocations = false
-  // allDict.longman.options.grammar = false
-  // allDict.longman.options.thesaurus = false
-  // allDict.longman.options.examples = true
-  // allDict.longman.options.bussinessFirst = false
-  // allDict.longman.options.related = false
+  const allDict = profile.dicts.all
+  allDict.bing.options.tense = false
+  allDict.bing.options.phsym = false
+  allDict.bing.options.cdef = false
+  allDict.bing.options.related = false
+  allDict.bing.options.sentence = 9999
+  allDict.cnki.options.dict = false
+  allDict.eudic.options.resultnum = 9999
+  allDict.macmillan.options.related = false
+  allDict.longman.options.wordfams = false
+  allDict.longman.options.collocations = false
+  allDict.longman.options.grammar = false
+  allDict.longman.options.thesaurus = false
+  allDict.longman.options.examples = true
+  allDict.longman.options.bussinessFirst = false
+  allDict.longman.options.related = false
 
   return { idItem, profile }
 }
@@ -139,57 +139,57 @@ export function scholar(): ProfileStorage {
 
   const profile = getDefaultProfile(idItem.id) as ProfileMutable
   profile.dicts.selected = [
-    // 'googledict',
+    'googledict',
     'cambridge',
-    // 'cobuild',
-    // 'etymonline',
-    // 'cnki',
-    // 'macmillan',
-    // 'lexico',
-    // 'websterlearner',
-    // 'google',
-    // 'youdaotrans',
-    // 'zdic',
-    // 'guoyu',
-    // 'liangan'
+    'cobuild',
+    'etymonline',
+    'cnki',
+    'macmillan',
+    'lexico',
+    'websterlearner',
+    'google',
+    'youdaotrans',
+    'zdic',
+    'guoyu',
+    'liangan'
   ]
 
-  // const allDict = profile.dicts.all
-  // allDict.macmillan.defaultUnfold = {
-  //   matchAll: false,
-  //   english: false,
-  //   chinese: false,
-  //   japanese: false,
-  //   korean: false,
-  //   french: false,
-  //   spanish: false,
-  //   deutsch: false,
-  //   others: false
-  // }
-  // allDict.lexico.defaultUnfold = {
-  //   matchAll: false,
-  //   english: false,
-  //   chinese: false,
-  //   japanese: false,
-  //   korean: false,
-  //   french: false,
-  //   spanish: false,
-  //   deutsch: false,
-  //   others: false
-  // }
-  // allDict.websterlearner.defaultUnfold = {
-  //   matchAll: false,
-  //   english: false,
-  //   chinese: false,
-  //   japanese: false,
-  //   korean: false,
-  //   french: false,
-  //   spanish: false,
-  //   deutsch: false,
-  //   others: false
-  // }
-  // allDict.google.selectionWC.min = 5
-  // allDict.youdaotrans.selectionWC.min = 5
+  const allDict = profile.dicts.all
+  allDict.macmillan.defaultUnfold = {
+    matchAll: false,
+    english: false,
+    chinese: false,
+    japanese: false,
+    korean: false,
+    french: false,
+    spanish: false,
+    deutsch: false,
+    others: false
+  }
+  allDict.lexico.defaultUnfold = {
+    matchAll: false,
+    english: false,
+    chinese: false,
+    japanese: false,
+    korean: false,
+    french: false,
+    spanish: false,
+    deutsch: false,
+    others: false
+  }
+  allDict.websterlearner.defaultUnfold = {
+    matchAll: false,
+    english: false,
+    chinese: false,
+    japanese: false,
+    korean: false,
+    french: false,
+    spanish: false,
+    deutsch: false,
+    others: false
+  }
+  allDict.google.selectionWC.min = 5
+  allDict.youdaotrans.selectionWC.min = 5
 
   return { idItem, profile }
 }
@@ -220,17 +220,17 @@ export function nihongo(): ProfileStorage {
 
   const profile = getDefaultProfile(idItem.id) as ProfileMutable
   profile.dicts.selected = [
-    // 'mojidict',
-    // 'hjdict',
-    // 'weblioejje',
-    // 'weblio',
-    // 'google',
-    // 'tencent',
-    // 'caiyun',
-    // 'googledict',
-    // 'wikipedia'
+    'mojidict',
+    'hjdict',
+    'weblioejje',
+    'weblio',
+    'google',
+    'tencent',
+    'caiyun',
+    'googledict',
+    'wikipedia'
   ]
-  // profile.dicts.all.wikipedia.options.lang = 'ja'
+  profile.dicts.all.wikipedia.options.lang = 'ja'
   profile.waveform = false
 
   return { idItem, profile }

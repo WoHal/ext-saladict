@@ -68,7 +68,7 @@ export const DictItem: FC<DictItemProps> = props => {
 
   useEffect(() => {
     if (props.searchStatus === 'FINISH') {
-      setFoldState('FULL')
+      setFoldState('HALF')
     } else {
       setFoldState('COLLAPSE')
     }

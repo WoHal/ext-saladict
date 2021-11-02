@@ -197,17 +197,17 @@ async function onInstalled({
   )
 
   if (reason === 'install') {
-    // if (
-    //   !(await storage.sync.get('hasInstructionsShown')).hasInstructionsShown
-    // ) {
-    //   openUrl('options.html?menuselected=Privacy&nopanel=true', true)
-    //   if (window.appConfig.langCode.startsWith('zh')) {
-    //     openUrl('https://saladict.crimx.com/notice.html')
-    //   } else {
-    //     openUrl('https://saladict.crimx.com/en/notice.html')
-    //   }
-    //   storage.sync.set({ hasInstructionsShown: true })
-    // }
+    if (
+      !(await storage.sync.get('hasInstructionsShown')).hasInstructionsShown
+    ) {
+      openUrl('options.html?menuselected=Privacy&nopanel=true', true)
+      if (window.appConfig.langCode.startsWith('zh')) {
+        openUrl('https://saladict.crimx.com/notice.html')
+      } else {
+        openUrl('https://saladict.crimx.com/en/notice.html')
+      }
+      storage.sync.set({ hasInstructionsShown: true })
+    }
   } else if (reason === 'update') {
     if (!process.env.DEBUG) {
       const curr = await checkUpdate(browser.runtime.getManifest().version)
