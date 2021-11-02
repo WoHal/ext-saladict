@@ -1,81 +1,81 @@
 import { SupportedLangs } from '@/_helpers/lang-check'
 
-import baidu from '@/components/dictionaries/baidu/config'
-import bing from '@/components/dictionaries/bing/config'
-import ahdict from '@/components/dictionaries/ahdict/config'
-import oaldict from '@/components/dictionaries/oaldict/config'
-import caiyun from '@/components/dictionaries/caiyun/config'
+// import baidu from '@/components/dictionaries/baidu/config'
+// import bing from '@/components/dictionaries/bing/config'
+// import ahdict from '@/components/dictionaries/ahdict/config'
+// import oaldict from '@/components/dictionaries/oaldict/config'
+// import caiyun from '@/components/dictionaries/caiyun/config'
 import cambridge from '@/components/dictionaries/cambridge/config'
-import cnki from '@/components/dictionaries/cnki/config'
-import cobuild from '@/components/dictionaries/cobuild/config'
-import etymonline from '@/components/dictionaries/etymonline/config'
-import eudic from '@/components/dictionaries/eudic/config'
-import google from '@/components/dictionaries/google/config'
-import googledict from '@/components/dictionaries/googledict/config'
-import guoyu from '@/components/dictionaries/guoyu/config'
-import hjdict from '@/components/dictionaries/hjdict/config'
-import jikipedia from '@/components/dictionaries/jikipedia/config'
-import jukuu from '@/components/dictionaries/jukuu/config'
-import lexico from '@/components/dictionaries/lexico/config'
-import liangan from '@/components/dictionaries/liangan/config'
-import longman from '@/components/dictionaries/longman/config'
-import macmillan from '@/components/dictionaries/macmillan/config'
-import mojidict from '@/components/dictionaries/mojidict/config'
-import naver from '@/components/dictionaries/naver/config'
-import renren from '@/components/dictionaries/renren/config'
-// import shanbay from '@/components/dictionaries/shanbay/config'
-import sogou from '@/components/dictionaries/sogou/config'
-import tencent from '@/components/dictionaries/tencent/config'
-import urban from '@/components/dictionaries/urban/config'
-import vocabulary from '@/components/dictionaries/vocabulary/config'
-import weblio from '@/components/dictionaries/weblio/config'
-import weblioejje from '@/components/dictionaries/weblioejje/config'
-import merriamwebster from '@/components/dictionaries/merriamwebster/config'
-import websterlearner from '@/components/dictionaries/websterlearner/config'
-import wikipedia from '@/components/dictionaries/wikipedia/config'
-import youdao from '@/components/dictionaries/youdao/config'
-import youdaotrans from '@/components/dictionaries/youdaotrans/config'
-import zdic from '@/components/dictionaries/zdic/config'
+// import cnki from '@/components/dictionaries/cnki/config'
+// import cobuild from '@/components/dictionaries/cobuild/config'
+// import etymonline from '@/components/dictionaries/etymonline/config'
+// import eudic from '@/components/dictionaries/eudic/config'
+// import google from '@/components/dictionaries/google/config'
+// import googledict from '@/components/dictionaries/googledict/config'
+// import guoyu from '@/components/dictionaries/guoyu/config'
+// import hjdict from '@/components/dictionaries/hjdict/config'
+// import jikipedia from '@/components/dictionaries/jikipedia/config'
+// import jukuu from '@/components/dictionaries/jukuu/config'
+// import lexico from '@/components/dictionaries/lexico/config'
+// import liangan from '@/components/dictionaries/liangan/config'
+// import longman from '@/components/dictionaries/longman/config'
+// import macmillan from '@/components/dictionaries/macmillan/config'
+// import mojidict from '@/components/dictionaries/mojidict/config'
+// import naver from '@/components/dictionaries/naver/config'
+// import renren from '@/components/dictionaries/renren/config'
+// // import shanbay from '@/components/dictionaries/shanbay/config'
+// import sogou from '@/components/dictionaries/sogou/config'
+// import tencent from '@/components/dictionaries/tencent/config'
+// import urban from '@/components/dictionaries/urban/config'
+// import vocabulary from '@/components/dictionaries/vocabulary/config'
+// import weblio from '@/components/dictionaries/weblio/config'
+// import weblioejje from '@/components/dictionaries/weblioejje/config'
+// import merriamwebster from '@/components/dictionaries/merriamwebster/config'
+// import websterlearner from '@/components/dictionaries/websterlearner/config'
+// import wikipedia from '@/components/dictionaries/wikipedia/config'
+// import youdao from '@/components/dictionaries/youdao/config'
+// import youdaotrans from '@/components/dictionaries/youdaotrans/config'
+// import zdic from '@/components/dictionaries/zdic/config'
 
 // For TypeScript to generate typings
 // Follow alphabetical order for easy reading
 export const defaultAllDicts = {
-  baidu: baidu(),
-  bing: bing(),
-  ahdict: ahdict(),
-  oaldict: oaldict(),
-  caiyun: caiyun(),
+  // baidu: baidu(),
+  // bing: bing(),
+  // ahdict: ahdict(),
+  // oaldict: oaldict(),
+  // caiyun: caiyun(),
   cambridge: cambridge(),
-  cnki: cnki(),
-  cobuild: cobuild(),
-  etymonline: etymonline(),
-  eudic: eudic(),
-  google: google(),
-  googledict: googledict(),
-  guoyu: guoyu(),
-  hjdict: hjdict(),
-  jikipedia: jikipedia(),
-  jukuu: jukuu(),
-  lexico: lexico(),
-  liangan: liangan(),
-  longman: longman(),
-  macmillan: macmillan(),
-  mojidict: mojidict(),
-  naver: naver(),
-  renren: renren(),
-  // shanbay: shanbay(),
-  sogou: sogou(),
-  tencent: tencent(),
-  urban: urban(),
-  vocabulary: vocabulary(),
-  weblio: weblio(),
-  weblioejje: weblioejje(),
-  merriamwebster: merriamwebster(),
-  websterlearner: websterlearner(),
-  wikipedia: wikipedia(),
-  youdao: youdao(),
-  youdaotrans: youdaotrans(),
-  zdic: zdic()
+  // cnki: cnki(),
+  // cobuild: cobuild(),
+  // etymonline: etymonline(),
+  // eudic: eudic(),
+  // google: google(),
+  // googledict: googledict(),
+  // guoyu: guoyu(),
+  // hjdict: hjdict(),
+  // jikipedia: jikipedia(),
+  // jukuu: jukuu(),
+  // lexico: lexico(),
+  // liangan: liangan(),
+  // longman: longman(),
+  // macmillan: macmillan(),
+  // mojidict: mojidict(),
+  // naver: naver(),
+  // renren: renren(),
+  // // shanbay: shanbay(),
+  // sogou: sogou(),
+  // tencent: tencent(),
+  // urban: urban(),
+  // vocabulary: vocabulary(),
+  // weblio: weblio(),
+  // weblioejje: weblioejje(),
+  // merriamwebster: merriamwebster(),
+  // websterlearner: websterlearner(),
+  // wikipedia: wikipedia(),
+  // youdao: youdao(),
+  // youdaotrans: youdaotrans(),
+  // zdic: zdic()
 }
 
 export type AllDicts = typeof defaultAllDicts

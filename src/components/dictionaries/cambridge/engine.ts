@@ -17,53 +17,22 @@ import {
 } from '../helpers'
 
 export const getSrcPage: GetSrcPageFunction = async (text, config, profile) => {
-  let { lang } = profile.dicts.all.cambridge.options
-
-  if (lang === 'default') {
-    switch (config.langCode) {
-      case 'zh-CN':
-        lang = 'en-chs'
-        break
-      case 'zh-TW':
-        lang = 'en-chz'
-        break
-      default:
-        lang = 'en'
-        break
-    }
-  }
-
-  switch (lang) {
-    case 'en':
-      return (
-        'https://dictionary.cambridge.org/search/direct/?datasetsearch=english&q=' +
-        encodeURIComponent(
-          text
-            .trim()
-            .split(/\s+/)
-            .join('-')
-        )
-      )
-    case 'en-chs':
-      return (
-        'https://dictionary.cambridge.org/zhs/%E6%90%9C%E7%B4%A2/direct/?datasetsearch=english-chinese-simplified&q=' +
-        encodeURIComponent(text)
-      )
-    case 'en-chz': {
-      const chsToChz = await getChsToChz()
-      return (
-        'https://dictionary.cambridge.org/zht/%E6%90%9C%E7%B4%A2/direct/?datasetsearch=english-chinese-traditional&q=' +
-        encodeURIComponent(chsToChz(text))
-      )
-    }
-  }
+  return (
+    'https://dictionary.cambridge.org/dictionary/english/' +
+    encodeURIComponent(
+      text
+        .trim()
+        .split(/\s+/)
+        .join('-')
+    )
+  )
 }
 
 const HOST = 'https://dictionary.cambridge.org'
 
 type CambridgeResultItem = {
   id: string
-  html: HTMLString
+  url: string
 }
 
 export type CambridgeResult = CambridgeResultItem[]
@@ -76,9 +45,17 @@ export const search: SearchFunction<CambridgeResult> = async (
   profile,
   payload
 ) => {
+  const url = await getSrcPage(text, config, profile)
+  function handleResult() {
+    return {
+      result: [{ id: 'cambridge', url }],
+      audio: {},
+      catalog: []
+    }
+  }
   return fetchDirtyDOM(await getSrcPage(text, config, profile))
-    .catch(handleNetWorkError)
-    .then(doc => handleDOM(doc, profile.dicts.all.cambridge.options))
+    .then(handleResult)
+    .catch(handleResult)
 }
 
 function handleDOM(
