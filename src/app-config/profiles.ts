@@ -36,18 +36,18 @@ export function _getDefaultProfile(id?: string) {
     dicts: {
       /** default selected dictionaries */
       selected: [
-        'bing',
-        'cobuild',
+        // 'bing',
+        // 'cobuild',
         'cambridge',
-        'youdao',
-        'urban',
-        'vocabulary',
-        'caiyun',
-        'youdaotrans',
-        'zdic',
-        'guoyu',
-        'liangan',
-        'googledict'
+        // 'youdao',
+        // 'urban',
+        // 'vocabulary',
+        // 'caiyun',
+        // 'youdaotrans',
+        // 'zdic',
+        // 'guoyu',
+        // 'liangan',
+        // 'googledict'
       ] as Array<keyof ReturnType<typeof getAllDicts>>,
       // settings of each dict will be auto-generated
       all: getAllDicts()
